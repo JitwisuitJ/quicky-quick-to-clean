@@ -5,7 +5,7 @@ export default function Navbar() {
   return (
     <header className='w-full relative z-20 padding-x'>
       <nav className='pt-10 h-32 flex justify-between items-center max-container'>
-        <div className='h-[150px] w-[150px]  min-w-[150px] relative top-0 left-0'>
+        <div className='h-[150px] w-[150px]  min-w-[150px] relative top-0 left-0 max-mobile:h-[80px] max-mobile:w-[80px]  max-mobile:min-w-[80px]'>
           <Image
             src='/images/logo_quicky.png'
             alt='quicky-logo'
