@@ -22,6 +22,10 @@ const Hero = () => {
           <h1 className='md:text-4xl text-2xl max-mobile:text-xl'>
             ล้างด้วยมือ สะอาดไร้ร้อยทุกจุด
           </h1>
+
+          <h1 className='md:text-4xl text-2xl max-mobile:text-xl'>
+            เปิดให้บริการทุกวัน 09:00 - 20:00
+          </h1>
         </div>
       </section>
     </section>
