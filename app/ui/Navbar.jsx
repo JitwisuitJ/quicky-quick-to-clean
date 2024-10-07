@@ -47,7 +47,7 @@ export default function Navbar() {
           </Link>
         </div>
 
-        <div className='wide:hidden dropdown dropdown-end relative top-0 right-0'>
+        <div className='wide:hidden dropdown dropdown-end relative top-0 right-0 z-30'>
           <button className='btn btn-square btn-ghost'>
             <svg
               xmlns='http://www.w3.org/2000/svg'
@@ -64,7 +64,7 @@ export default function Navbar() {
             </svg>
           </button>
 
-          <div className='menu dropdown-content bg-[#F5F5F7] bg-opacity-100 rounded-box z-20 w-max p-2 shadow-lg '>
+          <div className='menu dropdown-content bg-[#F5F5F7] bg-opacity-100 rounded-box z-30 w-max p-2 shadow-lg '>
             <div className='flex flex-col gap-5 p-10'>
               <Link
                 href='#why-quicky'
