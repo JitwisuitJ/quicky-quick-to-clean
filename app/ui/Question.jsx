@@ -2,7 +2,7 @@ import { faqs } from '@/constants';
 
 const Question = () => {
   return (
-    <section id='question' className='padding max-container'>
+    <section id='questions' className='padding max-container'>
       <section className='max-container'></section>
       <h1 className='text-center mb-10 font-bold text-5xl max-mobile:text-4xl'>
         คำถามที่พบบ่อย

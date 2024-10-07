@@ -1,6 +1,6 @@
 const Location = () => {
   return (
-    <section id='location' className='padding max-container'>
+    <section id='locations' className='padding max-container'>
       <section className='max-container'>
         <h3 className='text-center text-5xl font-bold max-md944:hidden '>
           <span className='text-red-quicky'>QUICKY</span> ของเรามี 4 สาขาแล้วนะ

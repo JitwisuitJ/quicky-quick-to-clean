@@ -2,12 +2,27 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleDropdown = () => setIsOpen((prevState) => !prevState);
+
+  const dropdownRef = useRef(null);
+
+  const handleClickOutside = (event) => {
+    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      setIsOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
 
   return (
     <header className='w-full relative z-20 padding-x'>
@@ -35,7 +50,7 @@ export default function Navbar() {
             ขั้นตอนรับบริการ
           </Link>
           <Link
-            href='#location'
+            href='#locations'
             className='text-red-quicky font-bold text-xl transition-transform transform hover:scale-105 hover:text-red-600'
           >
             QUICKY อยู่ที่ไหนบ้าง
@@ -47,16 +62,16 @@ export default function Navbar() {
             รีวิวจากลูกค้า
           </Link>
           <Link
-            href='#question'
+            href='#questions'
             className='text-red-quicky font-bold text-xl transition-transform transform hover:scale-105 hover:text-red-600'
           >
             คำถามที่พบบ่อย
           </Link>
         </div>
 
-        <div className='relative'>
+        <div className='relative' ref={dropdownRef}>
           <button
-            className='p-2 rounded-lg text-red-quicky hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-red-quicky focus:ring-opacity-50'
+            className='p-2 rounded-lg text-red-quicky  '
             onClick={toggleDropdown}
             aria-haspopup='true'
             aria-expanded={isOpen}
@@ -94,7 +109,7 @@ export default function Navbar() {
                   ขั้นตอนรับบริการ
                 </Link>
                 <Link
-                  href='#location'
+                  href='#locations'
                   className='text-red-quicky font-bold text-xl transition-transform transform hover:scale-105 hover:text-red-600'
                   onClick={toggleDropdown}
                 >
@@ -108,7 +123,7 @@ export default function Navbar() {
                   รีวิวจากลูกค้า
                 </Link>
                 <Link
-                  href='#question'
+                  href='#questions'
                   className='text-red-quicky font-bold text-xl transition-transform transform hover:scale-105 hover:text-red-600'
                   onClick={toggleDropdown}
                 >
