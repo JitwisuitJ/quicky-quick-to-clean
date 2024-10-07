@@ -64,7 +64,7 @@ const Footer = () => {
               className='rounded-full m-0'
             />
 
-            <p className='text-white flex-1 '>
+            <p className='text-white flex-1 whitespace-nowrap'>
               Copyright. All rights reserved.
             </p>
           </div>

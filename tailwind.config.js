@@ -15,6 +15,7 @@ module.exports = {
         sm530: '530px',
         ssm: '588px',
         sm650: '650px',
+        md: '769px',
         md800: '800px',
         md944: '944px',
         mdl: '1000px',

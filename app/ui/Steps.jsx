@@ -8,7 +8,6 @@ const Steps = () => {
         className='absolute inset-0 bg-cover  bg-center  opacity-30'
         style={{
           backgroundImage: 'url(/images/steps_bg.jpeg)',
-          // backgroundPosition: '50% calc(100% + 0px)',
         }}
       />
       <section className='max-container relative z-10 '>

@@ -13,14 +13,13 @@ const Reviews = () => {
         className='absolute inset-0 bg-cover bg-center opacity-25'
         style={{
           backgroundImage: 'url(/images/review_bg.jpeg)',
-          // backgroundPosition: '50% calc(100% + 130px)',
         }}
       />
       <section className='max-container relative z-10'>
         <h1 className='text-center text-5xl font-bold text-red-quicky max-md:text-4xl max-sm530:text-3xl'>
           รีวิวจากลูกค้าที่ใช้บริการ
         </h1>
-        <h1 className='mt-5 text-center text-5xl font-bold mb-10 max-md:text-4xl max-sm530:text-3xl'>
+        <h1 className='mt-5 text-center text-5xl font-bold mb-10 max-md:text-3xl max-sm530:text-3xl'>
           <span className='text-red-quicky'>QUICKY</span>{' '}
           ขอขอบพระคุณลูกค้าทุกท่านนะคะ
         </h1>

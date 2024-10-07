@@ -69,7 +69,7 @@ export default function Navbar() {
           </Link>
         </div>
 
-        <div className='relative' ref={dropdownRef}>
+        <div className='relative wide:hidden' ref={dropdownRef}>
           <button
             className='p-2 rounded-lg text-red-quicky  '
             onClick={toggleDropdown}
