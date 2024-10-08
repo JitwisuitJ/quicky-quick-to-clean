@@ -77,42 +77,73 @@ const Footer = () => {
           <div className='grid grid-cols-1 gap-10'>
             <div>
               <p className='text-white leading-6 '>
-                <span className='text-red-quicky font-bold '>QUICKY </span>
-                @ปากน้ำ
+                <Link
+                  target='_blank'
+                  href='https://maps.app.goo.gl/tn9TVEE15eiWnBLk8'
+                >
+                  <span className='text-red-quicky font-bold '>QUICKY </span>
+                  @ปากน้ำ
+                  <br />
+                  456 8 Sukhumvit Rd, Pak Nam, Mueang Samut Prakan District,
+                  Samut Prakan 10270{' '}
+                </Link>
                 <br />
-                456 8 Sukhumvit Rd, Pak Nam, Mueang Samut Prakan District, Samut
-                Prakan 10270 <br />
-                <FaMobileAlt className='text-white inline' /> 0999026457
+                <Link href='tel:0999026457'>
+                  <FaMobileAlt className='text-white inline' /> 0999026457
+                </Link>
               </p>
             </div>
             <div>
               <p className='text-white leading-6 '>
-                <span className='text-red-quicky font-bold'>QUICKY </span>
-                @เทพารักษ์
+                <Link
+                  target='_blank'
+                  href='https://maps.app.goo.gl/ibZyaLSFZe3LRSaa8'
+                >
+                  <span className='text-red-quicky font-bold'>QUICKY </span>
+                  @เทพารักษ์
+                  <br />
+                  112, 10 หมู่ที่ 1 Thepharak Rd, Tambon Thepharak, Mueang Samut
+                  Prakan District, Samut Prakan 10270{' '}
+                </Link>
                 <br />
-                112, 10 หมู่ที่ 1 Thepharak Rd, Tambon Thepharak, Mueang Samut
-                Prakan District, Samut Prakan 10270 <br />
-                <FaMobileAlt className='text-white inline' /> 0999026457
+                <Link href='tel:0999026457'>
+                  <FaMobileAlt className='text-white inline' /> 0999026457
+                </Link>
               </p>
             </div>
             <div>
               <p className='text-white leading-6 '>
-                <span className='text-red-quicky font-bold'>QUICKY </span>
-                @เสรีไทย 29
+                <Link
+                  target='_blank'
+                  href='https://maps.app.goo.gl/EUTBReRyJqkfYp196'
+                >
+                  <span className='text-red-quicky font-bold'>QUICKY </span>
+                  @เสรีไทย 29
+                  <br />
+                  ปาก Soi SeriThai 29, Khlong Kum, Bueng Kum, Bangkok 10240{' '}
+                </Link>
                 <br />
-                ปาก Soi SeriThai 29, Khlong Kum, Bueng Kum, Bangkok 10240 <br />
-                <FaMobileAlt className='text-white inline' /> 0999026457
+                <Link href='tel:0999026457'>
+                  <FaMobileAlt className='text-white inline' /> 0999026457
+                </Link>
               </p>
             </div>
             <div>
               <p className='text-white leading-6 '>
-                <span className='text-red-quicky font-bold'>QUICKY </span>
-                @บางพลี
+                <Link
+                  target='_blank'
+                  href='https://maps.app.goo.gl/idcQRPZVq6pjCKFg8'
+                >
+                  <span className='text-red-quicky font-bold'>QUICKY </span>
+                  @บางพลี
+                  <br />
+                  32 92, Tambon Bang Phli Yai, Bang Phli District, Samut Prakan
+                  10540
+                </Link>
                 <br />
-                32 92, Tambon Bang Phli Yai, Bang Phli District, Samut Prakan
-                10540
-                <br />
-                <FaMobileAlt className='text-white inline' /> 0999026457
+                <Link href='tel:0999026457'>
+                  <FaMobileAlt className='text-white inline' /> 0999026457
+                </Link>
               </p>
             </div>
           </div>
